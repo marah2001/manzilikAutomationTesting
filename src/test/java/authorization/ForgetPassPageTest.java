@@ -27,6 +27,7 @@ public class ForgetPassPageTest {
         WebDriverWait wait = new WebDriverWait(manzilik_driver, 20);
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='basic']/div[2]/div/div/div/button")));
         manzilik_driver.findElement(By.xpath("//*[@id='basic']/div[2]/div/div/div/button")).click();
+        System.out.println("ready to production");
 //
 
     }
