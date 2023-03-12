@@ -4,8 +4,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+//import org.openqa.selenium.support.ui.ExpectedConditions;
+//import org.openqa.selenium.support.ui.WebDriverWait;
 
 import javax.swing.*;
 
@@ -30,8 +30,8 @@ public class LoginPageTest {
         manzilik_driver.findElement(By.xpath("//*[@id='basic_password']")).sendKeys("Marah&2001");
         String passwordText = manzilik_driver.findElement(By.xpath("//*[@id='basic_password']")).getText();
         System.out.println("the password is : " + passwordText);
-        WebDriverWait wait = new WebDriverWait(manzilik_driver, 20);
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='basic']/button")));
+//        WebDriverWait wait = new WebDriverWait(manzilik_driver, 20);
+//        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='basic']/button")));
         manzilik_driver.findElement(By.xpath("//*[@id='basic']/button")).click();
         String buttonText = manzilik_driver.findElement(By.xpath("//*[@id='basic']/button")).getText();
         System.out.println("button text is " + buttonText);
